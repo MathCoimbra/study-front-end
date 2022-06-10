@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Grid - Linhas e Colunas</title>
+        <meta charset="utf-8">
+        <!--Referências necessárias para utilizar o bootstrap-->
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+        <!--Referência a biblioteca do CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Referência ao grid para customizar em CSS-->
+        <link rel="stylesheet" href="grid.css">
+    </head>
+        <body>
+            <!--Sistema de GRID do Bootstrap-->
+            <!--Classe da variação do container, o fluid é utilizado para ocupar todo o espaço da viewport-->
+            <div class="container-fluid"><h1>Container Fluid.</h1>
+                <!--Classe de linha-->
+                <div class="row"><h2>Esta é uma linha...</h2>
+                    <!--Classe de coluna, o número máximo de colunas é 12, em cada linha pode ter várias colunas,
+                    porém no máximo 12, quando houver mais de uma linha o número de colunas deve ser separado em
+                    cada linha, sem ultrapassar as 12 colunas-->
+                    <aside class="col-md-4"><h3>ASIDE</h3></aside>
+                    <section class="col-md-8"><h3>SECTION</h3></section>
+                </div>
+            </div>
+        </body>
+</html>

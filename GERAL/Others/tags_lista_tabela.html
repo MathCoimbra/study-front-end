@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tags lista tabela</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--Tag para iniciar e terminar uma lista não ordenada (unordered list)-->
+        <ul>
+            <!--Tag para iniciar e terminar um item da lista-->
+            <li>Test 1</li>
+            <li>Test 2</li>
+            <li>Test 3</li>
+        </ul>
+        <!--Tag para iniciar e terminar uma lista ordenada (ordered list)-->
+        <ol>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+        </ol>
+        <!--Tag de início e fim de uma tabela, atributos abaixo (width e border) são apenas para conseguir visualizar a tabela, mas a boa
+        prática é utilizá-los no CSS-->
+        <table width="500" border="1">
+        <!--Tag de início e fim de uma linha da tabela-->
+        <tr>
+            <!--Tag de início e fim de uma célula da tabela, <th> é indicada para o título da tabela-->
+            <th>Título 1</th>
+            <th>Título 2</th>
+        </tr>
+        <tr>
+            <!--Outra tag de início e fim de uma célula da tabela, <td> é indicada para células comuns-->
+            <td>Célula 1</td>
+            <td>Célula 2</td>
+        </tr>
+    </table>
+    <br><br>
+        <!--Tabela exemplo 2-->
+        <table width="500" border="1">
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+        <tr>
+            <td>Célula 1</td>
+            <!--Aplicar uma célula mesclada na horizonal - atributo colspan, caso já exista uma célula na posição onde irá ocorrer a mesclagem é necessário
+            apagar essa célula-->
+            <td colspan="2">Célula 2</td>
+        </tr>
+    </table>
+    <br><br>
+        <!--Tabela exemplo 3-->
+        <table width="500" border="1">
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+        <tr>
+            <td>Célula 1</td>
+            <!--Aplicar uma célula mesclada na vertical - atributo rowspan, caso já exista uma célula na posição onde irá ocorrer a mesclagem
+            é necessário apagar essa célula-->
+            <td rowspan="2">Célula 2</td>
+            <td>Célula 3</td>
+        </tr>
+        <tr>
+            <td>Célula 1.1</td>
+        </tr>
+    </table>
+    </body>
+</html>

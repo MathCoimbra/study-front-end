@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Exemplo de formulário</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form id="formulario" method="POST">
+      <!-- Caixa de texto -->
+      <label for="nome">Nome Completo:<label><br>
+      <!-- Caixa para senha -->
+      <label for="senha">Senha: </label>
+      <input type="password" id="senha"><br>
+      <!-- Botões de escolha única -->
+      <label for="estcivil">Estado Civil: </label>
+      <input type="radio" name="estcivil" value="Solteiro">Solteiro
+      <input type="radio" name="estcivil" value="Casado">Casado
+      <input type="radio" name="estcivil" value="Viúvo">Viúvo<br>
+      <!-- Caixas de múltipla escolha -->
+      <label for="interesses">Interesses: </label>
+      <input type="checkbox" name="interesses" value="Música">Música
+      <input type="checkbox" name="interesses" value="Cinema">Cinema
+      <input type="checkbox" name="interesses" value="Teatro">Teatro<br>
+      <!-- Campo para upload -->
+      <label for="foto">Foto: </label>
+      <input type="file" id="foto"><br>
+      <!-- Botões -->
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar dados">
+      <input type="button" value="Faz nada">
+    </form>
+  </body>
+</html>

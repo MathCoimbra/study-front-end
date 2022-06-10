@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Inline, Vertical e Horizontal</title>
+        <meta charset="utf-8">
+        <!--Referencias necessárias para utilizar o bootstrap-->
+            <meta name="viewport"
+            content="width=device-width, initial-scale=1">
+            <!--Referência a biblioteca do CSS-->
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <!--Referência a biblioteca do Javascript-->
+            <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Formulário Inline</h2>
+            <!--Classe para informar a disposição de como ficará o formulário (o tipo do formulário)-->
+            <form class="form-inline">
+                <!--Classe para definir o rótulo e a caixa de texto de um e-mail e senha desse formulário-->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <!--Classe que deve conter em uma caixa de texto-->
+                    <!--Placeholder: elemento inserir um texto sobre o campo para informar ao usuário o que foi preenchido -->
+                    <input type="email" class="form-control"
+                    id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control"
+                    id="pwd" placeholder="Digite a senha">
+                </div>
+                <!--Classe para definir um botão-->
+                <button type="submit"
+                class="btn btn-default">Submit</button>
+            </form>
+            <h2>Formulário Vertical (padrão)</h2>
+            <!--Nesse tipo de formulário é utilizado a tag padrão do Bootstrap-->
+            <form>
+                <!--Classe para definir o rótulo e a caixa de texto de um e-mail e senha desse formulário-->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <!--Classe que deve conter em uma caixa de texto-->
+                    <input type="email" class="form-control"
+                    id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control"
+                    id="pwd" placeholder="Digite a senha">
+                </div>
+                <button type="submit"
+                class="btn btn-default">Submit</button>
+            </form>
+            <h2>Formulário Horizontal</h2>
+            <!--Classe para informar a disposição de como ficará o formulário (o tipo do formulário)-->
+            <form class="form-horizontal">
+                <!--Nesse tipo de formulário é utilizado as colunas do GRID para o posicionamento das colunas-->
+                <div class="form-group">
+                    <label class= "control-label col-md-2"
+                    for="email">Email:</label>
+                    <div class="col-md-10">
+                        <!--Classe que deve conter em uma caixa de texto-->
+                        <input type="email" class="form-control"
+                        id="email" placeholder="Digite o email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class= "control-label col-md-2"
+                    for="pwd">Senha:</label>
+                    <div class="col-md-10">
+                        <input type="password" class="form-control"
+                        id="pwd" placeholder="Digite a senha">
+                    </div>
+                </div class="form-group">
+                    <!--Classe para deixar alinhado o botão com as caixas de texto, no caso abaixo está sendo
+                    retirada duas colunas através do offset, para que as colinas fiquem com o mesmo número da
+                    caixa de texto (que são 10 colunas)-->
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit"
+                        class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
