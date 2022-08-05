@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos flex-shrink</title>
+    <style>
+      .flex-container {
+        display: flex;
+        border: 1px solid black;
+        max-width: 350px;
+        margin-bottom: 10px;
+      }
+
+      .item {
+        margin: 5px;
+        background-color: orange;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      /* Valor padrão do flex-shrink */
+      .s-1 {
+        flex-shrink: 1;
+      }
+
+      .fg-1 {
+        flex-grow: 1;
+      }
+
+      .sb {
+        flex-shrink: 0;
+        flex-basis: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      flex-shrink: 1 (valor padrão) Exemplo com aumento de itens, todos se
+      reduzem para caber no container
+    </p>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-1 fg-1">B</div>
+      <div class="item s-1 fg-1">B</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">D</div>
+      <div class="item s-1 fg-1">D</div>
+      <div class="item s-1 fg-1">E</div>
+      <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>
+      flex-shrink: 1 (valor padrão) Exemplo com aumento de conteúdo, os
+      conteúdos menores são diminuidos para que caiba todos no container
+    </p>
+    <div class="flex-container">
+      <div class="item s-1 fg-1">A</div>
+      <div class="item s-1 fg-1">BB SADAS ADAS ASDASD ASDA</div>
+      <div class="item s-1 fg-1">C</div>
+      <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <p>flex-shrink: 1 / basis: 100px (sem redução de conteúdo)</p>
+    <div class="flex-container">
+      <div class="item sb fg-1">A</div>
+      <div class="item sb fg-1">BB SADAS</div>
+      <div class="item sb fg-1">CC ASASA</div>
+      <div class="item sb fg-1">D</div>
+    </div>
+  </body>
+</html>

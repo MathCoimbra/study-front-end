@@ -1,0 +1,81 @@
+/* mudando a cor de fundo */
+body{
+    background: #c9c7c7;
+    font-family: Verdana;
+    /* alterando a largura */
+    width: 900px;
+    /* deixar margem sempre no centro */
+    margin: auto;
+}
+
+/* estilizando a foto adicionado a borda circular */
+.photo{
+    border: 1px solid #505050;
+    border-radius: 50%;
+}
+
+/* mudando a cor dos título, subtítulo e título do post, conforme abaixo, para a ID o hashtag é adicionado a frente e para classe um ponto */
+#title, .subtitle, .post_title{
+    color:#505050
+}
+
+#title{
+    font-size: 40px;
+    /* deixando a letra maiúscula */
+    text-transform: uppercase;
+}
+
+a{
+    /* alterando a linha do link para o meio da palavra (cortando a palavra) */
+    text-decoration: line-through;
+    color: #505050;
+}
+
+/* mudando o tamanho e estilo da fonte do título do post */
+.post_title{
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/* mudando a cor de fundo do post */ 
+.post{
+    background: #fff;
+    /* espaçamento entre o bloco e o conteúdo */
+    padding: 15px;
+    /* borda do conteúdo e padding*/
+    border: 3px solid #505050;
+    /* margem da borda, do conteúdo e da padding */
+    margin-bottom: 15px;
+    /* deixando a borda circular */
+    border-radius: 5px 10px;
+}
+
+/* alterando as margens para ter espaçamento no post do conteúdo*/
+.post_content{
+    margin:0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+/* alterando as margens para ter espaçamento no na imagem do post*/
+.post_image{
+    margin-bottom: 15px;
+    /* alterando a largura da imagem, nessa porcentagem sempre irá respeitar o elemento que ela está, no caso a borda*/
+    width: 100%;
+}
+
+/* alterando estilo da lista */
+.contacts_list{
+    /* removendo as bolinhas da lista */
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+/* alterando o link somente da lista */
+.contacts_list li a {
+    /* removendo a linha do meio */
+    text-decoration: none;
+}

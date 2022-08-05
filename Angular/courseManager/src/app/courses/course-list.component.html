@@ -1,0 +1,52 @@
+<h2>Course List</h2>
+
+<div class="form-group row">
+
+    <label class="col-sm-2 col-form-label">Filter By:</label>
+
+    <div class="col-sm-10">
+        <!-- atributo two way data binding que servirá para filtrar algum curso e somente apresentar esse item filtrado em tela -->
+        <input [(ngModel)]="filter" class="form-control">
+    </div>
+
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Code</th>
+            <th>Release Date</th>
+            <th>Rating</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- *ngFor - percorre o array de objetos de cursos, primeiro é definida uma variável início do loop e depois a variável do componente a ser iterado (variável de filtro)-->
+        <tr *ngFor="let course of filteredCourses">
+            <!-- atributo src em colchetes para que o Angular entenda que está sendo passado um valor de um componente para esse atributo (One way data binding) -->
+            <td><img [src]="course.imageUrl" width="40" height="40" ></td>
+            <!-- Interpolação -->
+            <td>{{ course.name }}</td>
+            <td>{{ course.price }}</td>
+            <!--  lowercase - pipe para deixar as letras do código do curso minúsculas -->
+            <!--  replace - pipe para substituir um caractere, no caso abaixo o hífen por um espaço em branco-->
+            <td>{{ course.code | lowercase | replace: '-': ' ' }}</td>
+            <!-- date - pipe para formatação de data -->
+            <td>{{ course.releaseDate | date: 'dd/MM/yyyy' }}</td>
+            <td>
+                <!-- atribuindo a tag criada pelo selector -->
+                <!-- passado o atributo rating a tag do componente star, possível isso através do decorator @Input() -->
+                <app-star [rating]="course.rating"></app-star>
+            </td>
+            <td>
+                <!-- routerLink - responsável por conectar os componentes via link, espera um array -->
+                <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary mr-2">Edit</a>
+                <button (click)="deleteById(course.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

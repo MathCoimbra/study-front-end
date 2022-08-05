@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tags básicas</title>
+        <!--Codificação para a tradução de caracteres especiais-->
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--Tag para incluir um parágrafo-->
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <!--Tag de quebra de linha-->
+        Line 1<br>
+        Line 2<br>
+        Line 3
+        <!--Tag essencial para atribuir as tags acima <br> e <p>, assim como estilizações CSS-->
+        <div class="artigo">Texto do artigo</div>
+        <!--Tags semânticas,  todos tem a mesma função da <div> porém é bom utilizá-las para destacar quais textos são importantes e menos
+            importantes, para atender o mercado profissional e para melhorar o SEO (indexação de busca dos navegadores)-->
+        <article>
+            <header>
+                <h1>Título do artigo</h1>
+                <p>Publicado em: <time pubdate="pubdate" datetime="17-06-2021">17 de Julho de 2021</time></p>
+            </header>
+            <p>Aqui começa um grande artigo...</p>
+            <section>
+                <h2>Subseção do artigo</h2>
+                <p>Descrição da subseção...</p>
+            </section>
+            <footer>
+                <p>Todos os direitos reservados kkk</p>
+            </footer>
+        </article>
+        <!--Tag para organização dos títulos dos textos-->
+        <h1>1. Título do texto</h1>
+        <p>Descrição...</p>
+        <h2>1.1 Subtítulo do texto</h2>
+        <p>Descrição...</p>
+        <h3>1.1.1 Sub do subtítulo do texto</h3>
+        <p>Descrição...</p>
+        <!--Tag para inserir imagens-->
+        <!--Por estar no mesmo caminho do arquivo HTML, somente foi inserido o nome da imagem-->
+        <img src ="test.png" alt="Imagem de teste">
+        <!--Caso a imagem fosse de outro caminho, seria necessário informar o caminho da imagem--><br>
+        <img src ="https://upload.wikimedia.org/wikipedia/pt/4/4b/S%C3%A3o_Paulo_Futebol_Clube.png" alt="O melhor clube paulista" 
+        title="O melhor clube paulista"><br>
+        <!--Criar um hyperlink para outro doc. HTML -->
+        <a href="tags_essenciais.html">Link para tags essenciais</a>
+        </body>
+</html>

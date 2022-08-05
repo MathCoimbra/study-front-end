@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - align-self</title>
+
+    <style>
+      .flex-container {
+        max-width: 350px;
+        border: 1px solid;
+        margin-bottom: 10px;
+        display: flex;
+      }
+
+      /* O align-items quando definido como center é priorizado pelo container e portanto o align-self é ignorado */
+      .align-container {
+        align-items: center;
+      }
+
+      .item {
+        background-color: brown;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      /* Valor padrão do align-self, quando definido sempre irá considerar o valor do align-items do container */
+      .auto {
+        align-self: auto;
+      }
+
+      .center {
+        align-self: center;
+      }
+
+      .start {
+        align-self: flex-start;
+      }
+
+      .end {
+        align-self: flex-end;
+      }
+
+      .baseline {
+        align-self: baseline;
+      }
+
+      .stretch {
+        align-self: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <p>align self auto</p>
+    <div class="flex-container align-container">
+      <div class="item auto">123 123 123</div>
+      <div class="item auto">456</div>
+      <div class="item auto">789</div>
+      <div class="item auto">10 11 12 13 14 15</div>
+    </div>
+
+    <p>align self center</p>
+    <div class="flex-container">
+      <div class="item center">123 123 123</div>
+      <div class="item center">456</div>
+      <div class="item center">789</div>
+      <div class="item center">10 11 12 13 14 15</div>
+    </div>
+
+    <p>align self end</p>
+    <div class="flex-container">
+      <div class="item end">123 123 123</div>
+      <div class="item end">456</div>
+      <div class="item end">789</div>
+      <div class="item end">10 11 12 13 15 15</div>
+    </div>
+
+    <p>align self start</p>
+    <div class="flex-container">
+      <div class="item start">123 123 </div>
+      <div class="item start">456</div>
+      <div class="item start">789</div>
+      <div class="item">10 11 12 13 15 15</div>
+    </div>
+
+    <p>align self baseline</p>
+    <div class="flex-container">
+      <div class="item baseline">123123123</div>
+      <div class="item baseline">456</div>
+      <div class="item baseline">78910111213</div>
+      <div class="item baseline">10 11 12 13 14 15</div>
+    </div>
+
+    <p>align self stretch (comportamento padrão)</p>
+    <div class="flex-container">
+      <div class="item stretch">123123</div>
+      <div class="item stretch">456</div>
+      <div class="item stretch">789</div>
+      <div class="item stretch">10 11 12 13 14</div>
+    </div>
+  </body>
+</html>
