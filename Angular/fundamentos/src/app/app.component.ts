@@ -1,3 +1,5 @@
+/* Arquivo que irá rodar a aplicação na tela app.component.html */
+
 import { Component } from '@angular/core';
 
 @Component({
