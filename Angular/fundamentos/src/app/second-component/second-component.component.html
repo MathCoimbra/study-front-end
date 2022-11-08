@@ -1,3 +1,6 @@
-<h2>Interpolation e Pipes:</h2>
+<h2>Interpolation, Pipes, Property Binding and Event Binding:</h2>
 <p>{{ name | uppercase}}</p>
 <p>{{ birthDate | date: "dd/MM/yyyy" }}</p>
+<img [src] = "imageURL" width="300">
+<br>
+<button (click)="showAge()" type="button">How old is he?</button>
