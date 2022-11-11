@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondComponentComponent {
   name = "Matheus";
-  birthDate = new Date("2001/09/29");
+  birthDate = new Date("09/29/2001");
   imageURL = "/assets/Foto.jpg";
   today = new Date();
-  years = this.birthDate.getDate() - this.today.getDate();
+  years = this.today.getFullYear() - this.birthDate.getFullYear();
 
   showAge() {
     alert(`He is ${this.years} years old`);
