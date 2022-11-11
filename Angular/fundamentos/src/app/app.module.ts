@@ -9,6 +9,7 @@ import { MultiplyByPipe } from './multiply-by.pipe';
 import { CustomizedPipeComponent } from './customized-pipe/customized-pipe.component';
 import { ThirdComponentComponent } from './two-way-data-binding/third-component.component';
 import { FormsModule } from '@angular/forms';
+import { FourthComponentComponent } from './list-rendering/fourth-component.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     SecondComponentComponent,
     MultiplyByPipe,
     CustomizedPipeComponent,
-    ThirdComponentComponent
+    ThirdComponentComponent,
+    FourthComponentComponent,
   ],
   imports: [
     BrowserModule,
