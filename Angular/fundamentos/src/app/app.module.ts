@@ -10,6 +10,7 @@ import { CustomizedPipeComponent } from './customized-pipe/customized-pipe.compo
 import { ThirdComponentComponent } from './two-way-data-binding/third-component.component';
 import { FormsModule } from '@angular/forms';
 import { FourthComponentComponent } from './list-rendering/fourth-component.component';
+import { PersonalizedComponentComponent } from './personalized-component/personalized-component.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FourthComponentComponent } from './list-rendering/fourth-component.comp
     CustomizedPipeComponent,
     ThirdComponentComponent,
     FourthComponentComponent,
+    PersonalizedComponentComponent,
   ],
   imports: [
     BrowserModule,
