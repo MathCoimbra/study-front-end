@@ -13,6 +13,8 @@ import { FourthComponentComponent } from './list-rendering/fourth-component.comp
 import { PersonalizedComponentComponent } from './personalized-component/personalized-component.component';
 import { SuperComponentComponent } from './super-component/super-component.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
+import { Service1ComponentComponent } from './service1-component/service1-component.component';
+import { Service2ComponentComponent } from './service2-component/service2-component.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ChildComponentComponent } from './child-component/child-component.compo
     PersonalizedComponentComponent,
     SuperComponentComponent,
     ChildComponentComponent,
+    Service1ComponentComponent,
+    Service2ComponentComponent,
   ],
   imports: [
     BrowserModule,
