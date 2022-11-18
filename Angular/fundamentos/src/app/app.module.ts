@@ -17,6 +17,7 @@ import { Service1ComponentComponent } from './service1-component/service1-compon
 import { Service2ComponentComponent } from './service2-component/service2-component.component';
 import { LifecycleComponentComponent } from './lifecycle-component/lifecycle-component.component';
 import { SuperLifecycleComponentComponent } from './super-lifecycle-component/super-lifecycle-component.component';
+import { CardComponentComponent } from './card-component/card-component.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { SuperLifecycleComponentComponent } from './super-lifecycle-component/su
     Service2ComponentComponent,
     LifecycleComponentComponent,
     SuperLifecycleComponentComponent,
+    CardComponentComponent,
   ],
   imports: [
     BrowserModule,
