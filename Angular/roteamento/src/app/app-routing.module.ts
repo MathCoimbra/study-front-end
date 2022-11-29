@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageWithParamsComponent } from './page-with-params/page-with-params.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 
 
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: "second-page", component: SecondPageComponent },
   /* redirecionamento quando a página não tiver nenhum endereço o full é para garantir que somente será redirecionado quando o path estiver vazio */
   { path: "", redirectTo: "first-page", pathMatch: "full" },
+  {path: "page-with-params/:id", component: PageWithParamsComponent},
   /* dois asteriscos serve para quando há uma URL desconhecida, não configurada no sistema, */
   { path: "**", component: PageNotFoundComponent }
 ];
