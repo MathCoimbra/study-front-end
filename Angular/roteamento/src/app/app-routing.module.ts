@@ -12,6 +12,7 @@ const routes: Routes = [
   /* redirecionamento quando a página não tiver nenhum endereço o full é para garantir que somente será redirecionado quando o path estiver vazio */
   { path: "", redirectTo: "first-page", pathMatch: "full" },
   {path: "page-with-params/:id", component: PageWithParamsComponent},
+  { path: 'lazy-loading', loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule) },
   /* dois asteriscos serve para quando há uma URL desconhecida, não configurada no sistema, */
   { path: "**", component: PageNotFoundComponent }
 ];
